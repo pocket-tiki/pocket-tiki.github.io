@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "pocket-tiki.github.io"
+  title: "Pocket Tiki Bar"
   navbar:
     background: primary
     left:

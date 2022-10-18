@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "pocket-tiki.github.io",
+    "title": "Pocket Tiki Bar",
     "section": "",
-    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "This page was created to help pick a Tiki cocktail based of what ingredients you have to what ingredients you enjoy.\n\n\nRows: 112 Columns: 5\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (4): cocktail_name, ingredients_list, recipe, source\nlgl (1): glassware\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n# A tibble: 6 × 5\n  cocktail_name         ingredients_list                 recipe glassware source\n  <chr>                 <chr>                            <chr>  <lgl>     <chr> \n1 Aku Aku               fresh pineapple, mint leaves, l… \"5 (1… NA        Smugg…\n2 Pupule                orange peel, lime juice, orange… \"Spir… NA        Smugg…\n3 Don’s Own Grog        lime juice, Demerara syrup, Gre… \"3⁄4 … NA        Smugg…\n4 Port Au Prince        lime juice, pineapple juice, De… \"1⁄2 … NA        Smugg…\n5 Three Dots and a Dash lime juice, orange juice, Honey… \"1⁄2 … NA        Smugg…\n6 Mexican El Diablo     lime wedge, fresh lime juice, c… \"1 li… NA        Smugg…\n\n\n\ndatatable(data,\n          options = list(pageLength = 50),\n          rownames = FALSE,\n          colnames = c(\"Cocktail Name\", \"Ingredients List\", \"Recipe\", \"Glass Type\", \"Source\"),\n          filter = 'top')\n\n\n\n\n\nxxx…consider making the glass type variable a factor"
   },
   {
     "objectID": "about.html",

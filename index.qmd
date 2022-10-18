@@ -1,11 +1,30 @@
 ---
-title: "pocket-tiki.github.io"
+title: "Pocket Tiki Bar"
 ---
 
-This is a Quarto website.
+Welcome!
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+This page was created to help pick a Tiki cocktail based of what ingredients you have to what ingredients you enjoy.
 
 ```{r}
-1 + 1
+#| include: false
+library(tidyverse)
+library(DT)
 ```
+
+```{r}
+#| echo: false
+data <- read_csv("data/pocket_tiki_data.csv")
+head(data)
+```
+
+```{r}
+datatable(data,
+          options = list(pageLength = 50),
+          rownames = FALSE,
+          colnames = c("Cocktail Name", "Ingredients List", "Recipe", "Glass Type", "Source"),
+          filter = 'top')
+```
+
+xxx...consider making the glass type variable a factor
+
